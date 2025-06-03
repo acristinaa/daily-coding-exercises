@@ -1,13 +1,8 @@
 def reverse(items):
-    for i in range(len(items)):
-        already_sorted = True
-        for j in range(len(items) - i - 1):
-            if items[j] > items[j + 1]:
-                items[j], items [j + 1] = items[j + 1], items[j]
-                already_sorted = False
-        if already_sorted:
-            break
-    return items
+    reversed_list = []
+    for i in range(len(items)-1, -1, -1): #Going backwards
+        reversed_list.append(items[i])
+    return reversed_list
 
 
 items = [1, 2, 5, 2, 3, 8, 1]
