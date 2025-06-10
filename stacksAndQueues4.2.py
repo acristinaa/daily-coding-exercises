@@ -13,7 +13,7 @@ def are_brackets_balanced(stacky):
         elif char == ")" or char == "]" or char == "}": #If the character is a closing bracket, check if it matches the most recent opening bracket
             if not stack:
                 return False
-            last_open_bracket = stack.pop() #Pop the most recent opening bracket from the stack
+            last_open_bracket = stack.pop() 
 
             if bracket_pairs[char] != last_open_bracket: #Check if the closing bracket matches the opening bracket we just popped
                return False
